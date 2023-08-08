@@ -5,18 +5,22 @@
 }
 
 .logo {
-  width: 50vh;
-  position: absolute;
-  bottom: 45%;
+  width: 500px;
+  position: relative;
   pointer-events: none;
 }
 
+@media only screen and (max-width: 960px)  {
+  .logo {
+    width: 50vw;
+  }
+}
+
 .searchbarsec {
-  height: 100vh;
 }
 
 .searchbar {
-  width: 80vh;
+  width: 55vw; 
   outline-style: auto;
   animation: outlineloop 10s infinite;
 }
@@ -48,9 +52,7 @@
 }
 
 .searchresult {
-  width: 80vh;
-  position: absolute;
-  top: 55%;
+  width: 55vw;
 }
 
 .linktree:hover {
