@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.linktree {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  width: 50vh;
+  position: absolute;
+  bottom: 45%;
+  pointer-events: none;
+}
+
+.searchbarsec {
+  height: 100vh;
+}
+
+.searchbar {
+  width: 80vh;
+  outline-style: auto;
+  animation: outlineloop 10s infinite;
+}
+
+@keyframes outlineloop {
+  0% {
+    outline-color: #4885ed;
+  }
+  25% {
+    outline-color: #db3236;
+  }
+  50% {
+    outline-color: #f4c20d;
+  }
+  75% {
+    outline-color: #4885ed;
+  }
+  100% {
+    outline-color: #3cba54;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btnsearch {
+  border: none;
+}
+
+.searchresult {
+  width: 80vh;
+  position: absolute;
+  top: 55%;
+}
+
+.linktree:hover {
+  cursor: pointer;
+  animation: forwards linktreehover 0.75s;
+}
+
+@keyframes linktreehover {
+  0% {
+    transform: scale(108%);
+    transition: 0.25s ease-in-out;
+  }
+  50% {
+    transform: scale(103%);
+    transition: 0.25s ease-in-out;
+  }
+  100% {
+    transform: scale(105%);
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.linktree:hover .card-title {
+  color: #4885ed;
+}
+
+.card-subtitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
