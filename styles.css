@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-red: #e54336;
+  --color-reddark: #c72928;
+  --color-yellow: #f5b704;
+  --color-yellowdark: #e69100;
+  --color-blue: #4280ef;
+  --color-bluedark: #225bc6;
+  --color-green: #34a354;
+  --color-greendark: #25824d;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.jumbotron {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  background-color: #dfedff;
+}
+
+.maintitle {
+  color: var(--color-blue);
+}
+
+.sejarah {
+  background: #cef6cb;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contentsejarah {
+  width: 632px;
+  height: 252px;
+}
+
+.subtitlesejarah {
+  color: #1d1b1b;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.titlesejarah {
+  color: #25824d;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.textsesjarah {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.building {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buildingsubtitle {
+  color: #4280ef;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.buildingtitle {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buildingwrap {
+  
+}
+
+.card-img-top {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+  filter: drop-shadow(2px 7px 11px rgba(0, 0, 0, 0.25));
+}
+
+.card {
+  margin-top: 100px;
+  padding-top: 100px;
+  background: #F5F5F5;
+  border-radius: 25px;
+}
+
+.card-title {
+  flex-shrink: 0;
+  color: #1D1B1B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-text {
+  color: #1D1B1B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-button {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 152px;
+  height: 47px;
+  border-radius: 45px;
+  background: #e84232;
+}
+
+.card-button:hover {
+  background: #fff;
+  color: #e84232;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  margin: 50px;
+  width: 400px;
+  height: 300px;
+  filter: blur(3px);
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+  transition: ease-in-out 0.2s;
+}
+
+.swiper-slide-active .card {
+  background: #71a6eb;
+}
+
+.swiper-slide-active .card-title {
+  color: #fff;
+}
+.swiper-slide-active .card-text {
+  color: #fff;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
