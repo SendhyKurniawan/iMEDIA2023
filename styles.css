@@ -12,6 +12,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
 .nav-link {
   font-weight: bold;
 }
@@ -64,8 +68,6 @@
 .building {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  width: 100%;
-  height: 100vh;
 }
 
 .buildingsubtitle {
@@ -86,23 +88,24 @@
 
 .card-img-top {
   position: absolute;
-  top: -150px;
+  top: -80px;
   left: 50%;
   margin-left: -200px;
   width: 400px;
   filter: drop-shadow(2px 7px 11px rgba(0, 0, 0, 0.25));
+  transform: scale(50%);
 }
 
 .card {
   margin-top: 100px;
   padding-top: 100px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 25px;
 }
 
 .card-title {
   flex-shrink: 0;
-  color: #1D1B1B;
+  color: #1d1b1b;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +113,7 @@
 }
 
 .card-text {
-  color: #1D1B1B;
+  color: #1d1b1b;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -135,10 +138,17 @@
   color: #e84232;
 }
 
+.btnbefore {
+  opacity: 0%;
+  transition: ease-in-out 0.2s;
+}
+
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  padding-bottom: 6rem;
 }
 
 .swiper-slide {
@@ -152,6 +162,18 @@
 
 .swiper-slide-active {
   filter: blur(0px);
+  transform: scale(110%) !important; 
+  transition: ease-in-out 0.2s;
+}
+
+.swiper-slide-active .card-img-top {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+  filter: drop-shadow(2px 7px 11px rgba(0, 0, 0, 0.25));
+  transform: scale(100%);
   transition: ease-in-out 0.2s;
 }
 
@@ -166,14 +188,69 @@
   color: #fff;
 }
 
+.swiper-slide-active .btnbefore {
+  opacity: 100%;
+  transition: ease-in-out 0.2s;
+}
+
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
 
-.swiper-button-next {
-  padding-right: 29%;
+.swiper-3d .swiper-wrapper {
+  transform-style: preserve-3d;
 }
-.swiper-button-prev {
-  padding-left: 29%;
+
+
+.funfact {
+  background-color: #f3f3f3;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.funfactsubtitle {
+  color: #4280ef;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.funfacttitle {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.perpustakaan {
+  background-image: url();
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #1d1b1b;
+  scale: 125%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #d9d9d9;
 }
