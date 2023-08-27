@@ -22,7 +22,25 @@ var swiper = new Swiper(".mySwiper", {
 const youtube = document.querySelector('#youtube');
 const instagram = document.querySelector('#instagram');
 const facebook = document.querySelector('#facebook');
+const cardbtn1 = document.querySelector('#cardbtn1');
+const cardbtn2 = document.querySelector('#cardbtn2');
+const cardbtn3 = document.querySelector('#cardbtn3');
 
+// add a click event listener to the div
+cardbtn1.addEventListener('click', function() {
+  // specify the action to take when the div is clicked
+  window.location.href = 'GedungA.html';
+});
+// add a click event listener to the div
+cardbtn2.addEventListener('click', function() {
+  // specify the action to take when the div is clicked
+  window.location.href = 'GedungD.html';
+});
+// add a click event listener to the div
+cardbtn3.addEventListener('click', function() {
+  // specify the action to take when the div is clicked
+  window.location.href = 'GedungE.html';
+});
 // add a click event listener to the div
 youtube.addEventListener('click', function() {
   // specify the action to take when the div is clicked
@@ -42,36 +60,66 @@ facebook.addEventListener('click', function() {
 const card1 = document.getElementById("card1")
 const card2 = document.getElementById("card2")
 const card3 = document.getElementById("card3")
-const cardbtn1 = document.getElementById("cardbtn1")
-const cardbtn2 = document.getElementById("cardbtn2")
-const cardbtn3 = document.getElementById("cardbtn3")
+const cardbody1 = document.getElementById("cardbody1")
+const cardbody2 = document.getElementById("cardbody2")
+const cardbody3 = document.getElementById("cardbody3")
+const almyra = document.getElementById("almyra")
+const amanda = document.getElementById("amanda")
+const citra = document.getElementById("citra")
+const najma = document.getElementById("najma")
+const photoalmyra = document.getElementById("photoalmyra")
+const photoamanda = document.getElementById("photoamanda")
+const photocitra = document.getElementById("photocitra")
+const photonajma = document.getElementById("photonajma")
 
-// card1.addEventListener("mouseover", function () {
-//   cardbtn1.classList.remove("btnbefore");
-//   cardbtn1.classList.add("btnafter");
-  
+// photoalmyra.addEventListener("mouseover", function () {
+//   almyra.classList.remove("d-none");
+//   almyra.classList.remove("tidaktampil");
+//   almyra.classList.add("tampil");
 // });
-// card1.addEventListener("mouseleave", function () {
-//   cardbtn1.classList.add("btnbefore");
-//   cardbtn1.classList.remove("btnafter");
-// });
-
-// card2.addEventListener("mouseover", function () {
-//   cardbtn2.classList.remove("btnbefore");
-//   cardbtn2.classList.add("btnafter");
-  
-// });
-// card2.addEventListener("mouseleave", function () {
-//   cardbtn2.classList.add("btnbefore");
-//   cardbtn2.classList.remove("btnafter");
+// photoalmyra.addEventListener("mouseleave", function () {
+//   almyra.classList.remove("tampil");
+//   almyra.classList.add("tidaktampil");
+//   almyra.classList.add("d-none");
 // });
 
-// card3.addEventListener("mouseover", function () {
-//   cardbtn3.classList.remove("btnbefore");
-//   cardbtn3.classList.add("btnafter");
-  
+// photoamanda.addEventListener("mouseover", function () {
+//   amanda.classList.remove("d-none");
+//   amanda.classList.remove("tidaktampil");
+//   amanda.classList.add("tampil");
 // });
-// card3.addEventListener("mouseleave", function () {
-//   cardbtn3.classList.add("btnbefore");
-//   cardbtn3.classList.remove("btnafter");
+// photoamanda.addEventListener("mouseleave", function () {
+//   amanda.classList.remove("tampil");
+//   amanda.classList.add("tidaktampil");
+//   amanda.classList.add("d-none");
 // });
+
+// photocitra.addEventListener("mouseover", function () {
+//   citra.classList.remove("tidaktampil");
+//   citra.classList.remove("d-none");
+//   citra.classList.add("tampil");
+// });
+// photocitra.addEventListener("mouseleave", function () {
+//   citra.classList.remove("tampil");
+//   citra.classList.add("tidaktampil");
+//   citra.classList.add("d-none");
+// });
+
+// photonajma.addEventListener("mouseover", function () {
+//   najma.classList.remove("d-none");
+//   najma.classList.remove("tidaktampil");
+//   almyra.classList.add("tampil");
+// });
+// photonajma.addEventListener("mouseleave", function () {
+//   najma.classList.remove("tampil");
+//   najma.classList.add("tidaktampil");
+//   najma.classList.add("d-none");
+// });
+
+const overlaycatalog1 = document.getElementById("overlaycatalog1");
+const overlaycatalog3 = document.getElementById("overlaycatalog2");
+const overlaycatalog2 = document.getElementById("overlaycatalog3");
+const overlaycatalog4 = document.getElementById("overlaycatalog4");
+const overlaycatalog5 = document.getElementById("overlaycatalog5");
+const overlaycatalog6 = document.getElementById("overlaycatalog6");
+

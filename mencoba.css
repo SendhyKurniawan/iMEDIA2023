@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-red: #e54336;
+  --color-reddark: #c72928;
+  --color-yellow: #f5b704;
+  --color-yellowdark: #e69100;
+  --color-blue: #4280ef;
+  --color-bluedark: #225bc6;
+  --color-green: #34a354;
+  --color-greendark: #25824d;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.dropend .dropdown-toggle {
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: gray;
+  color: #fff;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-left: -4rem;
+}
+
+.bannerA {
+  padding: 10rem;
+  padding-bottom: 8rem !important;
+  background: #ffe19d;
+}
+.bannerB {
+  padding: 10rem;
+  padding-bottom: 8rem !important;
+  background: #cef6cb;
+}
+.bannerC {
+  padding: 10rem;
+  padding-bottom: 8rem !important;
+  background: #ffe19d;
+}
+.bannerD {
+  padding: 10rem;
+  padding-bottom: 8rem !important;
+  background: #cef6cb;
+}
+.bannerE {
+  padding: 10rem;
+  padding-bottom: 8rem !important;
+  background: #f2b4b9;
+}
+
+.bannerimg {
+  filter: drop-shadow(2px 7px 11px rgba(0, 0, 0, 0.25));
+}
+
+.subtitle {
+  color: #1d1b1b;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.title {
+  width: 524px;
+  color: #e69100;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.textbanner {
+  font-size: 20px !important;
+}
+
+.googisubtitle {
+  color: #e69100;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.googititle {
+  color: #1d1b1b;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cardgoogi {
+    margin: auto;
+    padding: 3rem;
+    border-radius: 25px;
+    background: #FFF;
+    flex-shrink: 0;
+  }
+
+.textbanner {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+.p1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e2730b;
+}
+
+.judul {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.ketjudul {
+  text-align: justify;
+  font-weight: bold;
+}
+.point {
+  font-weight: bold;
+}
+
+.jarak {
+  padding-top: 10%;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #1d1b1b;
+    scale: 125%;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #d9d9d9;
+}
+
+footer {
+  background-color: #d9d9d9;
+}

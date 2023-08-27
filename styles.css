@@ -20,6 +20,23 @@
   font-weight: bold;
 }
 
+.dropend .dropdown-toggle {
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: gray;
+  color: #fff;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-left: -4rem;
+}
+
+
 .jumbotron {
   padding-top: 8rem;
   padding-bottom: 3rem;
@@ -36,14 +53,10 @@
   padding-bottom: 8rem;
 }
 
-.contentsejarah {
-  width: 632px;
-  height: 252px;
-}
-
 .subtitlesejarah {
   color: #1d1b1b;
-  font-size: 24px;
+  font-family: Poppins;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -51,18 +64,22 @@
 
 .titlesejarah {
   color: #25824d;
-  font-size: 48px;
+  font-family: Poppins;
+  font-size: 70px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  text-align: center;
 }
 
 .textsesjarah {
   color: #000;
-  font-size: 16px;
+  font-family: Poppins;
+  font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
 }
 
 .building {
@@ -96,7 +113,7 @@
   transform: scale(50%);
 }
 
-.card {
+.cardbuilding {
   margin-top: 100px;
   padding-top: 100px;
   background: #f5f5f5;
@@ -162,7 +179,7 @@
 
 .swiper-slide-active {
   filter: blur(0px);
-  transform: scale(110%) !important; 
+  transform: scale(110%) !important;
   transition: ease-in-out 0.2s;
 }
 
@@ -202,7 +219,6 @@
   transform-style: preserve-3d;
 }
 
-
 .funfact {
   background-color: #f3f3f3;
   padding-top: 8rem;
@@ -225,13 +241,194 @@
   line-height: normal;
 }
 
+.funfactcard {
+  background-size: cover;
+  object-fit: cover;
+  background-position: top;
+}
+
+.funfactisi {
+  display: flex;
+  width: 276.767px;
+  height: 179.039px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .form-control:focus {
   border-color: none;
   box-shadow: none;
 }
 
+.cardbody {
+  height: 300px;
+  opacity: 0%;
+  transition: ease-in-out 0.2s;
+}
+
+.funfactcard:hover .cardbody {
+  opacity: 100%;
+}
+
 .perpustakaan {
-  background-image: url();
+  background-image: url(img/funfact/perpustakaan.webp);
+}
+.angin {
+  background-image: url(img/funfact/angin.webp);
+}
+.batu {
+  background-image: url(img/funfact/BATU.webp);
+}
+.kapal {
+  background-image: url(img/funfact/kapal.webp);
+}
+.kelas {
+  background-image: url(img/funfact/kelas.webp);
+}
+.hall {
+  background-image: url(img/funfact/hall.webp);
+}
+
+.cardcatalog1:hover {
+  cursor: pointer;
+}
+.cardcatalog2:hover {
+  cursor: pointer;
+}
+.cardcatalog3:hover {
+  cursor: pointer;
+}
+.cardcatalog4:hover {
+  cursor: pointer;
+}
+.cardcatalog5:hover {
+  cursor: pointer;
+}
+.cardcatalog6:hover {
+  cursor: pointer;
+}
+
+.card-overlay {
+  opacity: 0%;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-overlay-after-red {
+  background: rgba(229, 67, 54, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.card-overlay-after-blue {
+  background: rgba(66, 128, 239, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.card-overlay-after-green {
+  background: rgba(115, 188, 107, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.review {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.reviewsubtitle {
+  color: #4280ef;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.reviewtitle {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.carousel-inner {
+  height: 325px;
+}
+
+.textreview {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+  text-align: justify;
+}
+
+.tidaktampil {
+  opacity: 0%;
+  transition: ease-in-out 0.2s;
+}
+
+.tampil {
+  opacity: 100%;
+  transition: ease-in-out 0.2s;
+}
+
+.reviewphoto {
+  background-size: cover;
+  object-fit: cover;
+  background-position: top;
+  width: 237px;
+  height: 356px;
+}
+
+.almyra {
+  background-image: url(review/Almyra_Zalfa_Anggadinata.jpeg);
+}
+.amanda {
+  background-image: url(review/Amanda_Aufadina.jpg);
+}
+.citra {
+  background-image: url(review/Cahaya_citra.jpg);
+}
+.najma {
+  background-image: url(review/Najma_Maylafaiz.jpg);
+}
+
+.googi {
+  background-color: #FFE19D;
+}
+
+.googisubtitle {
+  color: #E69100;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.googititle {
+  color: #000;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.cardgoogi {
+  margin: auto;
+  padding: 3rem;
+  border-radius: 25px;
+  background: #FFF;
+  flex-shrink: 0;
 }
 
 .circle {
