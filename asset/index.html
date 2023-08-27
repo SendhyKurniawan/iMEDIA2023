@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iMEDIA</title>
+    <link rel="shortcut icon" href="asset/logo.png" type="image/x-icon">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="navigation">
+      <nav class="navbar navbar bg-light navbar-ligth navbar-expand-lg navbar-before-scroll shadow-lg fixed-top" id="main-navbar" data-aos="fade-down">
+        <div class="container">
+          <img src="asset/logo.png" alt="iMEDIA2023" width="85px">
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse rounded-bottom-5" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="#sejarah">Sejarah</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deskripsi</a>
+                <ul class="dropdown-menu">
+                  <!--  -->
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gedung A
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="GedungA.html#perpustakaan">Perpustakaan</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#humas">Humas</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#rudir">Ruang Direktur</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#ruwadir">Ruang Wadir</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#labdes">Lab Desain</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#BRI">BRI</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#satpam">Pos Satpam</a></li>
+                      <li><a class="dropdown-item" href="GedungA.html#BNI">BNI</a></li>
+                    </ul>
+                  </li>
+                  <!--  -->
+                  <!--  -->
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="GedungB.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gedung B
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="GedungB.html#praktik">Praktik Produksi</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#bakpk">BAKPK</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#bauk">BAUK</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#subtim">Subtim</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#sport">Sport Center</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#aula">Aula</a></li>
+                      <li><a class="dropdown-item" href="GedungB.html#taman">taman</a></li>
+                    </ul>
+                  </li>
+                  <!--  -->
+                  <!--  -->
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="GedungC.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gedung C
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="GedungC.html#praktik">Praktik Produksi</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="tg">TGK (Teknik Grafika)</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="tk">TK (Teknik Kemasan)</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="kantek">Kantin Teknik</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="masjid">Masjid Ungu</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="kingdom">Kingdom</a></li>
+                      <li><a class="dropdown-item" href="GedungC.html" id="panggung">Panggung Merah</a></li>
+                      <li>
+                    </ul>
+                  </li>
+                  <!--  -->
+                  <!--  -->
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="GedungD.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gedung D
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="GedungD.html#pusgiwa">Pusgiwa</a></li>
+                      <li><a class="dropdown-item" href="GedungD.html#poliklinik">Poliklinik</a></li>
+                      <li><a class="dropdown-item" href="GedungD.html#hotel">Hotel Polimedia</a></li>
+                      <li><a class="dropdown-item" href="GedungD.html#kanbar">Kantin Baru</a></li>
+                      <li>
+                    </ul>
+                  </li>
+                  <!--  -->
+                  <!--  -->
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="GedungE.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gedung E
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="GedungE.html#basement">Basement</a></li>
+                      <li><a class="dropdown-item" href="GedungE.html#hall">Hall</a></li>
+                      <li><a class="dropdown-item" href="GedungE.html#jurusan">Ruang Jurusan Desain</a></li>
+                      <li><a class="dropdown-item" href="GedungE.html#kelas">Lantai 10</a></li>
+                      <li>
+                    </ul>
+                  </li>
+                  <!--  -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+        <div class="container jumbowrap">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="content" data-aos="fade-right">
+                <h1 class="display-5 fw-bold maintitle">MAPPING POLIMEDIA iMEDIA 2023</h1>
+                <p>            
+                  Yuk ikuti journey mapping campus untuk mengenal Polimedia lebih dekat! 
+                </p>
+                <div class="pt-3">
+                  <a href="#isometric" class="ordernowbtn btn btn-danger btn-md rounded-pill p-2 px-3 fw-bold">Lanjutkan</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+                <div data-aos="fade-left">
+                    <img class="mainimg" src="asset/logo.png" alt="Pepperoni Pizza" width="100%" />
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Jumbotron -->
+
+      <!-- Isometric -->
+      <section class="justify-content-center align-items-center d-flex">
+        <img src="asset/polimedia.png" alt="PoliMedia" width="100%" id="isometric" data-aos="fade-up" data-aos-delay="500">
+      </section>
+      <!-- Isometric -->
+
+      <!-- Sejarah -->
+      <section class="sejarah justify-content-center align-items-center d-flex" id="sejarah">
+        <div class="contentsejarah container text-center">
+          <div class="title row" data-aos="fade-up">
+              <h2 class="subtitlesejarah">Polimedia tuh apa sih?</h2>
+          </div>
+          <h1 class="titlesejarah" data-aos="fade-up" data-aos-delay="200">MENGENAL POLIMEDIA</h1>
+          <p class="textsejarah" data-aos="fade-up" data-aos-delay="400">
+            Politeknik Negeri Media Kreatif merupakan kampus yang terletak di Jl. Srengseng Sawah, Jagakarsa, Jakarta Selatan.<br>
+            Kampus ini menjadi satu-satunya kampus yang bergerak di bidang industri kreatif di Indonesia. <br>
+            Polimedia yang sebelumnya merupakan Teknik Grafika UI, pada tahun 2008 mulai memisahkan diri dan mulai menjadi kampus mandiri. <br>
+            Polimedia saat ini juga dikenal dengan nama lain seperti Polmed, Kampus Kreatif dan Kampus Ungu.<br>
+          </p>
+        </div>
+      </section>
+      <!-- Sejarah -->
+
+      <!-- Building -->
+      <section class="building" id="building">
+        <div class="container containerswiper">
+          <div class="text-center" data-aos="fade-up">
+            <h4 class="buildingsubtitle">Ada apa saja di Polimedia?</h4>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card cardbuilding">
+                  <img class="card-img-top" src="asset/gedung a,b,c.png" alt="Gedung">
+                  <div class="card-block p-3">
+                    <h4 class="card-title">Gedung A, B, C</h4>
+                    <p class="card-text">Gedung A, B, dan C adalah pusat kerja manajemen kampus dan perkuliahan mahasiswa teknik</p>
+                    <div class="justify-content-center d-flex">
+                      <button class="btn card-button btnbefore" id="cardbtn1">Lanjutkan</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="card cardbuilding">
+                  <img class="card-img-top" src="asset/pusjiwa.png" alt="Gedung">
+                  <div class="card-block p-3">
+                    <h4 class="card-title">Gedung D</h4>
+                    <p class="card-text">Gedung D adalah Pusgiwa atau Pusat Kegiatan Mahasiswa.</p>
+                    <div class="justify-content-center d-flex">
+                      <button class="btn card-button btnbefore" id="cardbtn2">Lanjutkan</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="card cardbuilding">
+                  <img class="card-img-top" src="asset/tower.png" alt="Gedung">
+                  <div class="card-block p-3">
+                    <h4 class="card-title">Gedung E</h4>
+                    <p class="card-text">Gedung E adalah pusat kegiatan belajar mengajar Mahasiswa/i khususnya Mahasiswa/i Program Studi Multimedia.</p>
+                    <div class="justify-content-center d-flex">
+                      <button class="btn card-button btnbefore" id="cardbtn3">Lanjutkan</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- Building -->
+
+      <!-- Funfact -->
+      <section class="funfact">
+        <div class="container">
+          <div class="text-center">
+            <h4 class="funfactsubtitle" data-aos="fade-up" data-aos-delay="300">Ada info seru apa saja ya?</h4>
+          <h2 class="funfacttitle text-uppercase" data-aos="fade-up" data-aos-delay="400">Funfact polimedia</h2>
+          </div>
+
+          <div class="row">
+            <!-- Perpustakaan -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard rounded-3 perpustakaan" id="card1" data-aos="fade-up" data-aos-delay="150">
+                <div class="cardbody p-3 card-overlay-after-red" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact Perpustakaan" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Wifinya cepat dan stabil banget! cocok untuk wifi hunter nih
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Perpustakaan -->
+            <!-- Angin -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard rounded-3 angin" id="card1" data-aos="fade-up" data-aos-delay="200">
+                <div class="cardbody p-3 card-overlay-after-blue" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact Angin" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Disebut angin karena areanya banyak angin dan sejuk!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Angin -->
+            <!-- Batu -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard rounded-3 batu" id="card1" data-aos="fade-up" data-aos-delay="250">
+                <div class="cardbody p-3 card-overlay-after-green" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact Batu" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Karena banyaknya bebatuan dan jadi salah satu favorit nongkrongnya anak mm nih
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batu -->
+            <!-- Kelas -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard  rounded-3 kelas" id="card1" data-aos="fade-up" data-aos-delay="300">
+                <div class="cardbody p-3 card-overlay-after-blue" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact kelas" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Kamu bisa lihat pemandangan kabut dari ruang kelas kalau sedang hujan.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kelas -->
+            <!-- Kapal -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard rounded-3 kapal" id="card1" data-aos="fade-up" data-aos-delay="350">
+                <div class="cardbody p-3 card-overlay-after-green" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact Kapal" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Terdapat kotak yang bergambar kapal, coba kamu cari kalo lagi main ke kapal
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kapal -->
+            <!-- Hall -->
+            <div class="col-lg-4 pt-3">
+              <div class="card funfactcard rounded-3 hall" id="card1" data-aos="fade-up" data-aos-delay="400">
+                <div class="cardbody p-3 card-overlay-after-red" id="overlaycatalog1">
+                  <form class="d-flex rounded-pill bg-white searchbar" role="search" action="https://www.google.com/search" method="GET">
+                    <input class="form-control rounded-pill border-0" name="q" type="search" placeholder="Funfact Hall" aria-label="Search"  />
+                    <button class="btn btnsearch" type="submit" value="Search"><i class="bi bi-search"></i></button>
+                  </form>
+                  <div class="rounded-3 mt-4 bg-white">
+                    <ul class="p-3">
+                      <li class="funfactisi">
+                        Gambar pada tiang adalah hasil karya Prodi Fotografi yang diganti secara berkala guys!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hall -->
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <!-- Funfact -->
+
+      <!-- Review Mahasiswa -->
+
+      <section class="review">
+        <div class="container">
+          <div class="text-center">
+            <h4 class="reviewsubtitle" data-aos="fade-up" data-aos-delay="150">Apa kata mereka?</h4>
+            <h2 class="reviewtitle text-uppercase" data-aos="fade-up" data-aos-delay="200">Review Mahasiswa</h2>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" data-aos="fade-left" data-aos-delay="200">
+              <div class="carousel-item active">
+                <div class="row reviewbody p-5" id="almyra">
+                  <div class="col-lg-6">
+                    <h2 class="reviewsubtitle">ALmyra</h2>
+                    <h2 class="reviewtitle">Zalfa</h2>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="bi bi-quote text-danger fs-1"></i>
+                    <p class="textreview">
+                      INIII SIHHH, dimana pun tempat yang bakal jadi tempat favorit dan sering dikunjungin kalian, tolong bgt buat buang sampah di tempatnya biar lingkungan kampus tuh tetep bersih dan enak diliat HEHEHEHEH”
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row reviewbody p-5" id="amanda">
+                  <div class="col-lg-6">
+                    <h2 class="reviewsubtitle">Amanda</h2>
+                    <h2 class="reviewtitle">Aufadina</h2>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="bi bi-quote text-danger fs-1"></i>
+                    <p class="textreview">
+                      yaudah semangat jalanin aja ya
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row reviewbody p-5" id="citra">
+                  <div class="col-lg-6">
+                    <h2 class="reviewsubtitle">Cahaya</h2>
+                    <h2 class="reviewtitle">Citra</h2>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="bi bi-quote text-danger fs-1"></i>
+                    <p class="textreview">
+                      apapun fasilitas yg ada dijaga ajazi, ya pokonya jgn lupa beli nasi sambel matah keburu abizz
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row reviewbody p-5" id="najma">
+                  <div class="col-lg-6">
+                    <h2 class="reviewsubtitle">Najma</h2>
+                    <h2 class="reviewtitle">Maylafaiz</h2>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="bi bi-quote text-danger fs-1"></i>
+                    <p class="textreview">
+                      Jangan malu malu buat explore!! It's your home now, so make yourself at home!!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outer">
+          
+          <div class="row photorow justify-content-center align-items-center d-flex">
+            <!--  -->
+            <div class="col-lg-3">
+              <div class="reviewphoto almyra" id="photoalmyra" data-aos="fade-up" data-aos-delay="200"></div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-lg-3">
+              <div class="reviewphoto amanda" id="photoamanda" data-aos="fade-up" data-aos-delay="250"></div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-lg-3">
+              <div class="reviewphoto citra" id="photocitra" data-aos="fade-up" data-aos-delay="300"></div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-lg-3">
+              <div class="reviewphoto najma" id="photonajma" data-aos="fade-up" data-aos-delay="350"></div>
+            </div>
+            <!--  -->
+          </div>
+          <!--  -->
+          </div>
+          
+        </div>
+      </section>
+      <!-- Review Mahasiswa -->
+
+      <!-- team -->
+      <section class="py-5">
+        <div class="container text-center">
+          <h2 class="reviewtitle">Behind the Web</h2>
+        </div>
+        <div class="container-fluid">
+          <img src="asset/team.png" alt="Behind the Web" width="100%">
+        </div>
+      </section>
+
+      <!-- Googi -->
+      <section class="googi py-5">
+        <div class="container">
+          <div class="text-center">
+            <h4 class="googisubtitle" data-aos="fade-up" data-aos-delay="200">Mascot iMedia</h4>
+            <h2 class="googititle text-uppercase" data-aos="fade-up" data-aos-delay="250">Say Hello to Googi !</h2>
+          </div>
+          <div class="maingoogi justify-content-center d-flex">
+            <img src="asset/mascot/Googi_4.png" alt="Googi" width="300px" data-aos="fade-up" data-aos-delay="500">
+          </div>
+          <div class="card justify-content-center d-flex w-50 cardgoogi" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <div class="googitext text-center justify-content-center d-flex">
+                <p>Klik tombol di bawah ini untuk menyapa Googi !</p>
+              </div>
+              <div class="googibtn justify-content-center d-flex" >
+                <a href="#" class="ordernowbtn btn btn-danger btn-md rounded-pill p-2 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#videoModal">Halo Googi !</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content bg-transparent border-0">
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <img src="asset/sambutan.png" alt="" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Googi -->
+
+      <!-- Footer -->
+      <footer class="contact py-5" id="contact">
+        <div class="container">
+          <div class="row pt-5 justify-content-center d-flex">
+            <div class="col-md-6">
+              <div class="footertext">
+                <img src="asset/logo.png" alt="iMEDIA2023" width="85px">
+                <p class="">Jl. Srengseng Sawah, Kel. Srengseng Sawah, Kec. Jagakarsa, Kota Administrasi Jakarta Selatan, Provinsi DKI Jakarta, Indonesia KP 12640</p>
+              </div>
+              <div class="socmed">
+                <h3>CONNECT WITH US :</h3>
+                <div class="row ps-3">
+                  <div class="circle d-flex justify-content-center align-items-center me-3" id="youtube"><i class="bi bi-youtube text-white"></i></div>
+                  <div class="circle d-flex justify-content-center align-items-center me-3" id="instagram"><i class="bi bi-instagram text-white"></i></div>
+                  <div class="circle d-flex justify-content-center align-items-center me-3" id="facebook"><i class="bi bi-facebook text-white"></i></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-3">
+              <h3>ABOUT US</h3>
+              <div >
+                <p>CONTACT</p>
+                <p>PMB</p>
+                <p>LAKIP</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3>CONTACT</h3>
+              <div >
+                <p>+62 811-1669-695
+                </p>
+                <a href="mailto: aisahxn@gmail.com">
+                  <p>humas@polimedia.ac.id</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <hr class="border-3" />
+            <p class="text-center">
+              Copyright ©2023 All rights reserved by iMedia
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+      
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        delay: 300,
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
